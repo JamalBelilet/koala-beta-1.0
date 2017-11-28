@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.CheckBox?>
+<Group >
+    <VBox stylesheets="/css/form.css">
+        <VBox  prefHeight="450" style="-fx-padding: 15; ">
+
+            <VBox spacing="20" style=" -fx-alignment: center">
+                <HBox spacing="15">
+                    <HBox spacing="15">
+                        <Label text="prix max: " style="-fx-font-size: 14"/>
+                        <TextField promptText="" style="-fx-pref-height: 35; -fx-pref-width: 200.388;"/>
+                    </HBox>
+                    <HBox spacing="15">
+                        <Label text="prix min: " style="-fx-font-size: 14"/>
+                        <TextField promptText="0.00" style="-fx-pref-height: 35; -fx-pref-width: 200.388;"/>
+                    </HBox>
+                </HBox>
+                <HBox spacing="15">
+                    <Label text="temps max: " style="-fx-font-size: 14"/>
+                    <TextField promptText="" style="-fx-pref-height: 35; -fx-pref-width: 200.388;"/>
+                </HBox>
+
+
+                <HBox spacing="15">
+                    <HBox spacing="15">
+                        <Label text="calorie: " style="-fx-font-size: 14"/>
+                        <TextField promptText="" style="-fx-pref-height: 35; -fx-pref-width: 200.388;"/>
+                    </HBox>
+                    <HBox spacing="15">
+                        <Label text="proteine: " style="-fx-font-size: 14"/>
+                        <TextField promptText="0.00" style="-fx-pref-height: 35; -fx-pref-width: 200.388;"/>
+                    </HBox>
+                </HBox>
+                <HBox spacing="15">
+                    <HBox spacing="15">
+                        <Label text="lipide: " style="-fx-font-size: 14"/>
+                        <TextField promptText="0.00" style="-fx-pref-height: 35; -fx-pref-width: 200.388;"/>
+                    </HBox>
+                    <HBox spacing="15">
+                        <Label text="glucide: " style="-fx-font-size: 14"/>
+                        <TextField promptText="0.00" style="-fx-pref-height: 35; -fx-pref-width: 200.388;"/>
+                    </HBox>
+                </HBox>
+
+                <HBox spacing="15">
+                    <CheckBox/>
+                    <Label text="gluten" style="-fx-font-size: 14"/>
+                </HBox>
+
+
+
+            </VBox>
+
+
+
+        </VBox>
+
+        <Button text="rechercher"
+            style=" -fx-pref-width: 200;
+            -fx-pref-height: 35;
+            -fx-min-height: 35;
+            -fx-font-size: 18;
+            -fx-background-color: rgba(0,0,0,0);
+            -fx-padding: 0 50 0 20;
+            -fx-border-radius: 3;
+            -fx-border-insets: 0 25 0 5;
+            -fx-border-width: 1;
+            -fx-border-style: solid;
+            -fx-border-color: #999999; " />
+
+    </VBox>
+</Group>

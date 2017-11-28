@@ -1,0 +1,193 @@
+
+* {
+    -fx-font: 24 "Caviar Dreams Bold";
+}
+
+
+#loginSuperContainer {
+    -fx-pref-width: 576 ;
+    -fx-max-width: 576 ;
+    -fx-alignment: center;
+    -fx-padding: 250 100 50 100;
+    -fx-background-color: #666666;
+    -fx-background-image: url("/img/1-Login/1.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-spacing: 50;
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+
+}
+
+#loginSuperContainer.change-back {
+    -fx-background-image: url("/img/1-Login/4.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+
+
+
+}
+#loginSuperContainer.change-back.change-back-sec {
+    -fx-background-image: null;
+    -fx-background-color: transparent;
+
+
+}
+#loginSuperContainer .sub-container {}
+
+#loginSuperContainer .login-container {
+
+    -fx-pref-width: 485.142 ;
+    -fx-max-width: 485.142 ;
+
+}
+#loginLabel {
+    -fx-padding: 0 75;
+}
+
+#loginLabel.error {
+    -fx-text-fill: brown;
+}
+
+#loginSuperContainer .passwd-container {
+
+    -fx-pref-width: 485.142 ;
+    -fx-max-width: 485.142 ;
+}
+#loginSuperContainer .passwd-container .label {
+
+}
+
+#loginSuperContainer .passwd-container .label, .login-container .label {
+    -fx-padding: 0 15;
+    -fx-text-fill: #F2F2F2;
+}
+
+#loginSuperContainer .passwd-container .text-field, .login-container .text-field {
+    -fx-pref-height: 64.897;
+    -fx-font-size: 18;
+    -fx-font-weight: normal;
+}
+#loginSuperContainer .passwd-container #passwd.error, .login-container #login.error {
+    -fx-pref-height: 64.897;
+    -fx-font-size: 18;
+    -fx-font-weight: normal;
+    -fx-background-color: orangered;
+    -fx-text-fill: white;
+}
+
+#loginSuperContainer .login-options {
+
+    -fx-pref-width: 485.142 ;
+    -fx-max-width: 485.142 ;
+    -fx-alignment: center;
+    -fx-spacing: 25;
+}
+
+
+
+#loginSuperContainer .passwd.active {
+    -fx-graphic: url("/img/1-Login/passwd-selected.png");
+}
+
+#loginSuperContainer .pin.active {
+    -fx-graphic: url("/img/pin-selected.png");
+}
+
+
+
+#loginSuperContainer .passwd {
+    -fx-graphic: url("/img/passwd.png");
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+
+}
+
+#loginSuperContainer .passwd:focused {
+    -fx-graphic: url("/img/passwd-selected.png");
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+
+}
+
+#loginSuperContainer .pin {
+    -fx-graphic: url("/img/pin.png");
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+#loginSuperContainer .pin:focused {
+    -fx-graphic: url("/img/pin-selected.png");
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+
+#loginSuperContainer .sign-in-container {
+
+    -fx-pref-width: 485.142 ;
+    -fx-max-width: 485.142 ;
+    -fx-alignment: center-right;
+
+}
+
+#loginSuperContainer .sign-in {
+    -fx-background-color: rgba(255,145,0,.7);
+
+    -fx-font-size: 14;
+    -fx-padding: 0;
+    -fx-font-weight: bolder;
+    -fx-border-color: white;
+    -fx-border-width: 0;
+    -fx-text-fill: white;
+    -fx-pref-height: 54.897;
+    -fx-pref-width: 165.373 ;
+
+
+
+
+}
+#loginSuperContainer .sign-in:focused {
+    -fx-background-color: #FFA000;
+    -fx-text-fill: white;
+    -fx-border-width: 1;
+
+
+
+}
+
+#loginSuperContainer .welcome-container {
+
+    -fx-spacing: 25;
+    -fx-alignment: bottom-center;
+    -fx-padding: 0 0 0 0;
+}
+#loginSuperContainer .welcome {
+    -fx-graphic: url("/img/1-Login/welcome.png");
+    -fx-font-size: 50;
+    -fx-font-weight: normal;
+    -fx-font-family: fantasy;
+    -fx-text-fill: #F2F2F2;
+}
+
+.login-text-field {
+    -fx-graphic: url("img/1-Login/2.png");
+}
+#passwd {
+    -fx-graphic: url("img/1-Login/3.png");
+}
+#passwdContainer #passwdLabel {
+    -fx-padding: 0 75;
+}
+.text-field:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: darkorange;
+}
+
+.profile-labels {
+    -fx-alignment: center-left;
+    -fx-padding: 15 2 2 2 ;
+}
+.profile-labels .label {
+    -fx-font-size: 18;
+}

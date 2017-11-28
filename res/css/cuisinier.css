@@ -1,0 +1,277 @@
+#signaler:hover, #proposer:hover {
+   -fx-underline: true;
+}
+
+
+#queueStack {
+    /*-fx-background-image: url("/img/5-cuisinier/scroll.jpg");*/
+    /*-fx-background-size: cover;*/
+    /*-fx-background-position: center;*/
+    /*-fx-background-repeat: no-repeat;*/
+    -fx-background-color: transparent;
+}
+
+
+#queue {
+
+    -fx-text-fill: #666666;
+    -fx-font-size: 12;
+    -fx-background-color: transparent;
+    -fx-spacing: 30;
+    -fx-padding: 85 35 0 35;
+    -fx-pref-height: 560;
+    -fx-pref-width: 350;
+}
+.inQueue {
+    /*initWidth= 265, initHeight= 42;*/
+    /*final*/
+    -fx-pref-height: 55;
+    -fx-pref-width: 265;
+    -fx-spacing: 16;
+    -fx-alignment: center-left;
+    -fx-background-color:  rgba(255, 255, 255, .5);
+    -fx-background-radius: 2.5;
+    -fx-border-insets: 0 0 1 0;
+    -fx-border-width: 0 0 0 17.86;
+    -fx-border-color: rgba(0, 0, 0, .2) rgba(0, 0, 0, .2) rgba(0, 0, 0, .9) rgba(255, 255, 255, .8);
+    -fx-border-style: solid;
+    -fx-padding: 10;
+
+}
+.inQueue .label {
+    -fx-font-size: 18;
+
+}
+.inQueue.e {
+    -fx-border-color: rgba(0, 0, 0, .2) rgba(0, 0, 0, .2) rgba(0, 0, 0, .2) rgba(255,145,0,.8);
+    -fx-background-color: rgba(255,145,0,.4);
+    -fx-background-color: rgba(255,145,0,.4);
+    -fx-pref-height: 42;
+    -fx-pref-width: 265 + 50;
+}
+.inQueue.e .label {
+    -fx-text-fill: white;
+
+}
+.inQueue.e.selected {
+    -fx-border-color: rgba(0, 0, 0, .2) rgba(0, 0, 0, .2) rgba(255,145,0,.8) rgba(255,145,0,.8);
+    -fx-pref-height: 42;
+    -fx-pref-width: 265 + 50;
+}
+.inQueue.selected {
+    -fx-border-color: rgba(0, 0, 0, .2) rgba(0, 0, 0, .2) rgba(255, 255, 255, 1) rgba(255, 255, 255, 1);
+    -fx-border-insets: 0 0 1 0;
+    -fx-border-width: 0 0 3 17.86;
+    -fx-pref-height: 42;
+    -fx-pref-width: 265 + 50;
+}
+
+.enAtt {
+    -fx-font-size: 14;
+    -fx-padding: 0 0 0 10;
+    -fx-graphic-text-gap: 15;
+}
+#enCoursStack {
+    -fx-alignment: center-right;
+    -fx-background-image: url("/img/5-cuisinier/5.3.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+
+#queueContainer {
+    -fx-background-image: url("/img/5-cuisinier/scroll.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-border-width: 0 7 0 0;
+    -fx-border-color: rgba(255,255,255,.3);
+}
+
+
+#enCours {
+    -fx-padding: 30;
+    -fx-spacing: 15;
+}
+.inEnCours {
+    -fx-alignment: top-right;
+    -fx-padding: 0 10;
+    -fx-pref-width: 400;
+    -fx-pref-height: 487;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-border-color: #FFA000;
+    -fx-background-color: rgba(244,244,244,.6);
+    -fx-spacing: 20;
+}
+.inEnCours .label {
+    -fx-text-fill: #4D4D4D;
+}
+.actionBar{
+
+    -fx-alignment: center-right;
+    -fx-spacing: 10;
+
+
+}
+.actionBar Button{
+
+    -fx-padding: 10 20;
+
+}
+.platImageView {
+    -fx-pref-width: 150;
+    -fx-padding: .5;
+    -fx-border-width: .5 .5 .5 .5;
+    -fx-border-style: solid;
+    -fx-border-color: #999999;
+
+}
+.valider {
+    -fx-background-color:  rgba(255,145,0,1);
+    -fx-text-fill: white;
+    -fx-background-position: 0 5 ;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-width: 100 ;
+    -fx-font-size: 16;
+    -fx-padding: 5 10 ;
+    -fx-text-alignment: center;
+    -fx-border-width: 1;
+    -fx-border-color: transparent;
+}
+.valider:hover {
+    -fx-background-color:  rgba(255,145,0,1);
+    -fx-underline: true;
+    -fx-border-color: white;
+}
+
+
+
+
+
+
+
+.close_enCours_ {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-image: url("/img/_close_1_black.png");
+    -fx-background-position: center ;
+    -fx-background-repeat: no-repeat;
+    -fx-min-width: 32 ;
+    -fx-min-height: 32 ;
+    -fx-text-alignment: center;
+}
+.separator .line {
+    -fx-border-color: #999999;
+}
+.platInfoLabel {
+    -fx-padding: 50 0;
+    -fx-wrap-text: true;
+    -fx-graphic: url("/img/plat.png");
+    -fx-graphic-text-gap: 15;
+}
+
+
+#topPane {
+    -fx-background-color: #E6E6E6;
+    -fx-background-image: url("/img/5-cuisinier/5.2.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+
+    -fx-padding: 10;
+    -fx-pref-height: 115;
+    -fx-max-height: 115;
+    -fx-pref-width: 1280;
+
+
+    -fx-border-width: 0 0 7 0;
+    -fx-border-color: rgba(255,255,255,.3);
+}
+
+.profile-info {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+.profile-info VBox {
+    -fx-spacing: 3;
+    -fx-padding: 5 0;
+    -fx-font-size: 14;
+    -fx-text-fill: #4D4D4D;
+}
+.profile-info VBox .label {
+    -fx-text-fill: #4D4D4D;
+}
+.separator .line {
+    -fx-border-color: #4D4D4D; -fx-border-width: .5;
+}
+.sign-out {
+    -fx-background-color: transparent;
+    -fx-border-width: .5;
+    -fx-border-color: #808080;
+    -fx-border-style: solid;
+
+}
+.sign-out:hover {
+    -fx-text-fill: white;
+    -fx-underline: true;
+    -fx-border-color: transparent;
+    -fx-background-color: #FFA000;
+
+
+}
+
+
+#signaler {
+    -fx-graphic: url("/img/3-Caissier/s3.png");
+
+    -fx-graphic-text-gap: 5;
+    -fx-padding: 0;
+}
+
+#proposer {
+    -fx-graphic: url("/img/3-Caissier/s2.png");
+    -fx-graphic-text-gap: 5;
+    -fx-padding: 0;
+
+}
+
+#proposer:hover {
+    -fx-underline: true;
+    -fx-graphic: url("/img/3-Caissier/s2-orng.png");
+
+}
+#signaler:hover {
+    -fx-graphic: url("/img/3-Caissier/s3-orng.png");
+
+    -fx-underline: true;
+}
+
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.thumb, .corner {
+    -fx-background-color: rgba(255,145,0,.5);
+    -fx-max-width: 7;
+    -fx-pref-width: 7;
+    -fx-min-width: 7;
+
+
+}
+.scroll-bar {
+    -fx-max-width: 7;
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-translate-x: 0;
+}
+.increment-button {
+    -fx-background-color: transparent;;
+}
+.increment-button:hover {
+    -fx-background-color: transparent;;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="koala.gui.cuisinier.controller.Controller"
+           stylesheets="/css/cuisinier.css" fx:id="rootContainer">
+    <BorderPane fx:id="container" >
+        <center>
+            <StackPane fx:id="enCoursStack">
+                <FlowPane fx:id="enCours" BorderPane.alignment="CENTER" hgap="25" vgap="25">
+                </FlowPane>
+            </StackPane>
+        </center>
+
+        <left>
+            <VBox id="queueContainer">
+                <ScrollPane style="-fx-hgap: 20;
+            -fx-vgap: 20;
+            -fx-fit-to-height: true;
+            -fx-fit-to-width: true;
+            -fx-hbar-policy: never;
+            -fx-background-color: transparent"
+                            styleClass="edge-to-edge">
+
+                    <StackPane fx:id="queueStack" style="-fx-background-color: transparent">
+                        <VBox fx:id="queue" BorderPane.alignment="CENTER" style="-fx-background-color: transparent"/>
+                    </StackPane>
+
+                </ScrollPane>
+            </VBox>
+        </left>
+        <right>
+        </right>
+
+        <top>
+            <BorderPane id="topPane">
+                <left>
+                    <HBox styleClass="profile-info" fx:id="compteInfo">
+                    </HBox>
+                </left>
+                <center>
+                    <ImageView fitHeight="115" preserveRatio="true">
+                        <Image url="/img/cuisinier-name.png"/>
+                    </ImageView>
+                </center>
+                <right><HBox alignment="BOTTOM_RIGHT" spacing="10">
+                    <Button fx:id="proposer" text="" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14"/>
+                    <Button fx:id="signaler" text="" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14"/>
+
+                </HBox></right>
+            </BorderPane>
+        </top>
+    </BorderPane>
+</StackPane>
+
+
+

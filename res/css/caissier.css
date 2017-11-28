@@ -1,0 +1,466 @@
+
+
+
+.label {
+    -fx-text-fill: black;
+}
+.categories, .plats {
+    -fx-hgap: 25;
+    -fx-vgap: 25;
+    -fx-pref-height: 560;
+    -fx-pref-width: 930;
+    -fx-tile-alignment: center;
+    -fx-padding: 25;
+}
+.oneCategory {
+    -fx-font-size: 24;
+    -fx-pref-height: 160;
+    -fx-max-height: 160;
+    -fx-pref-width: 200;
+    -fx-max-width: 200;
+    /*-fx-background-color: #CCCCCC;*/
+    -fx-effect: dropshadow(gaussian , rgba(0, 0, 0, .8), 10, 0, 0, 0);
+
+    -fx-alignment: center;
+
+}
+.oneCategory .label, .onePlat .label{
+    /*-fx-background-color: rgba(255, 255, 255, .8);*/
+    /*-fx-text-fill: #222222;*/
+    -fx-background-color: rgba(247, 147, 30, .8);
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-background-radius: 3;
+
+}
+.onePlat .label{-fx-background-color: rgba(247, 147, 30, .8);
+    /*-fx-text-fill: #222222;*/
+    -fx-text-fill: white;
+
+}
+.onePlat{
+    -fx-background-color: #CCCCCC;
+    -fx-font-size: 18;
+    -fx-font-weight: 600;
+    -fx-text-fill: #222222;
+    -fx-min-height: 130;
+    -fx-pref-width: 200;
+    -fx-max-width: 200;
+    -fx-effect: dropshadow(gaussian , rgba(0,0,0,0.3), 5, 0, 0, 0);
+    -fx-alignment: center;
+}
+
+.orderContainer {
+    -fx-border-width: 0 7 0 0;
+    -fx-border-color: rgba(255,255,255,.5);
+    -fx-text-fill: #666666;
+    -fx-font-size: 16;
+    -fx-background-color: #CCCCCC;
+    -fx-background-image: url("/img/3-Caissier/caissier-cmnd.jpg");
+
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-size: cover;
+    -fx-pref-height: 600;
+}
+
+#order {
+    /*-fx-background-image: url("/img/3-Caissier/lignes-commande.png");*/
+
+    -fx-background-position: center;
+    -fx-background-repeat: repeat-y;
+
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-spacing: 0;
+    -fx-padding: 55 15 0 10;
+    -fx-pref-height: 440;
+    -fx-pref-width: 345;
+}
+
+#order .label{
+    -fx-pref-height: 50;
+    -fx-max-width: 135;
+    -fx-alignment: center;
+    -fx-font-size: 19;
+    -fx-text-fill: #4D4D4D;
+}
+
+#order .quantity {
+    -fx-background-color: #FFA000;
+    -fx-border-width: 1;
+    -fx-border-color: white;
+    -fx-padding: 0;
+    -fx-alignment: center;
+    -fx-pref-height: 35;
+    -fx-pref-width: 35;
+    -fx-accent: #FFA000;
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+
+}
+
+#order #close {
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+}
+#order #close:hover {
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+}
+
+/*#recherche-btn {*/
+    /*-fx-pref-width: 125;*/
+    /*-fx-pref-height: 35;*/
+    /*-fx-min-height: 35;*/
+    /*-fx-font-size: 14;*/
+    /*-fx-background-color: rgba(0,0,0,0);*/
+    /*-fx-padding: 0 5 0 5;*/
+    /*-fx-border-radius: 3;*/
+    /*-fx-border-width: 1;*/
+    /*-fx-border-style: solid;*/
+    /*-fx-border-color: #999999;*/
+/*}*/
+
+
+#container {
+    -fx-background-image: url("/img/3-Caissier/1.3.jpg");
+    /*-fx-background-color: red;*/
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-size: cover;
+}
+
+
+#topPane {
+    -fx-background-color: #E2CFBF;
+
+    -fx-background-image: url("/img/3-Caissier/1.2.jpg");
+
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-size: cover;
+
+    -fx-padding: 10;
+    -fx-pref-height: 115;
+    -fx-max-height: 115;
+    -fx-pref-width: 1280;
+
+    -fx-border-width: 0 0 7 0;
+    -fx-border-color: rgba(255,255,255,.3);
+}
+.profile-info {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+.profile-info VBox {
+    -fx-spacing: 3;
+    -fx-padding: 5 0;
+    -fx-font-size: 14;
+    -fx-text-fill: #4D4D4D;
+}
+.profile-info VBox .label {
+    -fx-text-fill: #4D4D4D;
+}
+.separator .line {
+    -fx-border-color: #4D4D4D; -fx-border-width: .5;
+}
+.sign-out {
+    -fx-background-color: transparent;
+    -fx-border-width: .5;
+    -fx-border-color: #808080;
+    -fx-border-style: solid;
+
+}
+.sign-out:hover {
+    -fx-text-fill: white;
+    -fx-underline: true;
+    -fx-border-color: transparent;
+    -fx-background-color: #FFA000;
+
+
+}
+
+#signaler {
+    -fx-graphic: url("/img/3-Caissier/s3.png");
+
+    -fx-graphic-text-gap: 5;
+    -fx-padding: 0;
+}
+
+#proposer {
+    -fx-graphic: url("/img/3-Caissier/s2.png");
+    -fx-graphic-text-gap: 5;
+    -fx-padding: 0;
+
+}
+
+#proposer:hover {
+    -fx-underline: true;
+    -fx-graphic: url("/img/3-Caissier/s2-orng.png");
+
+}
+#signaler:hover {
+    -fx-graphic: url("/img/3-Caissier/s3-orng.png");
+
+    -fx-underline: true;
+}
+
+.subOrder {
+    -fx-spacing: 12;
+    /*-fx-border-insets: 0 0 25 0;*/
+    -fx-padding: 0 0 15 0;
+    /*-fx-border-width: 0 0 .5 0;*/
+    /*-fx-border-color: #4D4D4D;*/
+    -fx-alignment: center-left;
+}
+
+.subOrder .plat-name:hover {
+    -fx-underline: true;
+}
+
+
+#centerContainer {
+    -fx-spacing: 0;
+    -fx-padding: 25 25 15 25;
+    -fx-background-color: transparent;
+    /*-fx-background-image: url("/img/3-Caissier/1.3.jpg");*/
+    /*-fx-fit-to-height: true;*/
+    /*!*-fx-background-color: red;*!*/
+    /*-fx-background-position: center;*/
+    /*-fx-background-repeat: no-repeat;*/
+
+    /*-fx-background-size: cover;*/
+}
+
+
+#centerContainer-for-image {
+    -fx-fit-to-height: true;
+    /*-fx-padding: 10;*/
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-size: cover;
+}
+
+#searchBar {
+    -fx-alignment: top-left;
+
+}
+
+
+#searchKey HBox {
+    -fx-max-height: 40;
+    -fx-alignment: center;
+    -fx-padding: 0 15;
+    -fx-spacing: 20;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-background-color: #FFA000;
+}
+#searchKey HBox .label{
+    -fx-text-fill: white;
+
+}
+
+.separator .line {
+    -fx-border-color: #4D4D4D; -fx-border-width: .5;
+}
+
+.inClientCommand VBox{
+
+    -fx-background-color: #CCCCCC;
+    -fx-font-size: 12;
+}
+.inClientId {
+
+    -fx-spacing: 25;
+}
+.inClientId .label{
+
+    -fx-font-size: 18;
+    -fx-text-fill: #222222;
+}
+.inClientCommand VBox{
+
+    -fx-padding: 25 15;
+    -fx-background-color: #CCCCCC;
+    -fx-font-size: 12;
+}
+
+
+#client {
+    -fx-graphic: url("/img/3-Caissier/s1.png");
+    -fx-padding: 0;
+}
+
+#client:hover {
+    -fx-graphic: url("/img/3-Caissier/s1-orng.png");
+}
+
+.combo-box, .combo-box .text-field{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-text-fill: white;
+    -fx-font-size: 24;
+    -fx-pref-width: 440;
+    -fx-accent: #ffa000;
+
+}
+
+.combo-box .arrow, .combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.close_enCours_ {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-image: url("/img/_close_1.png");
+    -fx-background-position: center ;
+    -fx-background-repeat: no-repeat;
+    -fx-min-width: 32 ;
+    -fx-min-height: 32 ;
+    -fx-text-alignment: center;
+}
+
+.clientCommandes {
+    -fx-hgap: 25;
+    -fx-vgap: 25;
+    -fx-pref-height: 560;
+    -fx-pref-width: 930;
+    -fx-tile-alignment: center;
+    -fx-padding: 25;
+}
+.oneCommande {
+
+    -fx-font-size: 12;
+    -fx-padding: 15;
+    -fx-background-color: rgba(255,145,0,.6);
+
+
+    -fx-effect: dropshadow(gaussian , rgba(0,0,0,0.3), 2, 0, 0, 0);
+    -fx-alignment: center;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: white;
+}
+
+.oneCommande .label {
+    -fx-text-fill: white;
+
+}
+
+.oneCommande.encoure {
+    -fx-background-color: rgba(255,255,255,.6);
+
+    -fx-border-color: #FFA000;
+
+
+
+}
+.oneCommande.encoure .label {
+    -fx-text-fill: #4D4D4D;
+
+
+
+}
+
+
+.oneCommande GridPane {
+
+    -fx-hgap: 15;
+}
+
+
+#recherchAvancee {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0, 0, 0, 0);
+
+}
+#recherchAvancee:hover {
+    -fx-background-color: #FFA000;
+    -fx-background-radius: 2;
+}
+#recherchAvancee.selected {
+    -fx-background-color: #FFA000;
+    -fx-background-radius: 2;
+}
+#commander {
+    -fx-padding: 15 25; -fx-background-color:  rgba(255,145,0,.8); -fx-border-width: 1; -fx-border-color: transparent; -fx-text-fill: white; -fx-font-size: 18;
+
+}
+#commander:hover {
+    -fx-padding: 15 25; -fx-background-color: #FFA000; -fx-border-width: 1; -fx-border-color: white; -fx-text-fill: white; -fx-font-size: 18;
+
+}
+/*.profile-labels {*/
+    /*-fx-alignment: center-left;*/
+/*}*/
+
+#notificationCollection {
+    -fx-padding: 5 10 10 0;
+    -fx-spacing: 15;
+    -fx-background-color: transparent;
+}
+
+.notification {
+
+    /*-fx-pref-height: 98.588;*/
+    -fx-pref-width: 270.094;
+
+    -fx-background-color: rgba(255,255,255,.8);
+    /*-fx-background-color: rgba(255,145,0,.6);*/
+    -fx-effect: dropshadow(gaussian , rgba(0,0,0,0.3), 2, 0, 0, 0);
+    -fx-padding: 5;
+}
+
+.notification .label {
+    -fx-translate-y: 0;
+    -fx-text-fill: #4D4D4D;
+}
+
+
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.thumb, .corner {
+    -fx-background-color: rgba(255,145,0,.5);
+    -fx-max-width: 7;
+    -fx-pref-width: 7;
+    -fx-min-width: 7;
+
+
+}
+.scroll-bar {
+    -fx-max-width: 7;
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-translate-x: 0;
+}
+.increment-button {
+    -fx-background-color: transparent;;
+}
+.increment-button:hover {
+    -fx-background-color: transparent;;
+}
+
+.popNotification {
+    -fx-min-width: 700;
+    -fx-max-width: 700;
+    -fx-min-height: 420;
+    -fx-max-height: 420;
+    -fx-alignment: top-right;
+    -fx-padding: 15 25;
+    -fx-background-color: #EEEEEE;
+    -fx-background-image: url("/img/4-magasinier/magasinier01.jpg");
+    -fx-background-position: center ;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-radius: 2;
+}

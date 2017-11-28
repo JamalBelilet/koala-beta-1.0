@@ -1,0 +1,47 @@
+.progress-bar {
+    -fx-pref-height: 350;
+    -fx-pref-width: 350;
+    -fx-text-box-border: #CCCCCC;
+    -fx-control-inner-background: #CCCCCC;
+}
+.progress-bar .bar {
+    -fx-accent: #999;
+    -fx-background-color: #222;
+    -fx-padding: 0;
+}
+
+
+
+.inClientCommand {
+    -fx-pref-width: 275;
+    -fx-background-color: #CCCCCC;
+}
+
+.inClientCommand > VBox {
+    -fx-padding: 30 15;
+}
+.inClientCommand > VBox > HBox > .label{
+    -fx-font-size: 12;
+}
+
+.inClientCommand > VBox > HBox{
+    -fx-font-size: 12;
+    -fx-spacing: 10;
+}
+
+.inClientCommand HBox.inClientId{
+    -fx-spacing: 0;
+}
+
+.inClientCommand HBox.inClientId .label {
+    -fx-text-fill: #222222;
+    -fx-padding: 10;
+    -fx-font-size: 18;
+}
+
+.cookingTimeLeft {
+ -fx-alignment: center-right;
+    -fx-padding: 0 0 0 10;
+    -fx-background-color: bisque;
+}
+

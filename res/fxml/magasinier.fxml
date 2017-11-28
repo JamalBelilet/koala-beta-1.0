@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.TextFieldTableCell?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.text.TextFlow?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="koala.gui.magasinier.controller.Controller"
+           stylesheets="/css/magasinier.css" fx:id="rootContainer">
+    <BorderPane fx:id="container" >
+        <center>
+            <StackPane fx:id="enCours">
+                <VBox id="inEnCoursContainer" BorderPane.alignment="CENTER">
+                    <HBox spacing="25" fx:id="searchBar">
+                        <!--<ImageView fx:id="rollback" fitHeight="50" fitWidth="26">-->
+                            <!--<Image url="/img/row.png"/>-->
+                        <!--</ImageView>-->
+
+                        <StackPane style="-fx-background-color: transparent">
+                            <ImageView fitHeight="50 " fitWidth="391" fx:id="lines">
+                                <Image url="/img/lines.png"/>
+                            </ImageView>
+                            <TextField fx:id="searchField" prefColumnCount="15" translateX="0" translateY="7"/>
+                        </StackPane>
+
+                        <!--<ImageView fitHeight="50" fitWidth="38">-->
+                            <!--<Image url="/img/recherche.png"/>-->
+                        <!--</ImageView>-->
+                    </HBox>
+
+                    <TableView fx:id="tableView">
+                        <columns>
+                            <TableColumn text="Magasin">
+                                <!--<cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>-->
+                                <cellValueFactory><PropertyValueFactory property="magasin" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Id">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="id" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Nom">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="name" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Quantité">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="quantitie" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Prix achat">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="prixAchat" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Date péremption">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="datePeremption" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Description">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="description" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Calories">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="calorie" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Protéines">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="proteine" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Glucides">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="glucide" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Lipides">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="lipide" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Gluten">
+                                <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+                                <cellValueFactory><PropertyValueFactory property="gluten" />
+                                </cellValueFactory>
+                            </TableColumn>
+                        </columns>
+                    </TableView>
+
+                </VBox>
+            </StackPane>
+        </center>
+
+        <left>
+            <VBox styleClass="notificationCollectionVBoxParent">
+                <VBox fx:id="notificationCollection" BorderPane.alignment="CENTER"/>
+
+                <HBox alignment="BASELINE_RIGHT">
+                    <Button fx:id="btnViewAll" text="view all"/>
+                </HBox>
+            </VBox>
+        </left>
+
+        <right>
+
+        </right>
+
+        <top>
+            <BorderPane id="topPane">
+                <left>
+                    <HBox styleClass="profile-info" fx:id="compteInfo">
+                    </HBox>
+                </left>
+                <center>
+                    <ImageView fitHeight="115" preserveRatio="true">
+                        <Image url="/img/4-magasinier/magasinier-name.png"/>
+                    </ImageView>
+                </center>
+                <right><HBox alignment="BOTTOM_RIGHT" spacing="10">
+                    <Button fx:id="btnNotification" text="" styleClass="btn-notification"></Button>
+                    <Button fx:id="proposer" text="" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14"/>
+                    <Button fx:id="signaler" text="" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14"/>
+
+                </HBox></right>
+            </BorderPane>
+        </top>
+    </BorderPane>
+</StackPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<StackPane xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="koala.gui.cuisinier.controller.Controller"-->
+           <!--stylesheets="/css/cuisinier.css" fx:id="rootContainer">-->
+<!--<BorderPane fx:id="container" >-->
+    <!--<center>-->
+        <!--<StackPane fx:id="enCoursStack">-->
+            <!--<FlowPane fx:id="enCours" BorderPane.alignment="CENTER" hgap="25" vgap="25">-->
+
+                <!--&lt;!&ndash;<VBox styleClass="inEnCours">&ndash;&gt;-->
+                <!--&lt;!&ndash;<Button text="" styleClass="close_enCours_"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<VBox  prefHeight="450">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<HBox>&ndash;&gt;-->
+                <!--&lt;!&ndash;<Label styleClass="platInfoLabel"&ndash;&gt;-->
+                <!--&lt;!&ndash;text="Dolor mollit ut laborum exercitation sunt eiusmod laborum ea ex ad irure nulla ut fugiat culpa nisi ea Excepteur elit eiusmod ut mollit eu labore nisi consectetur occaecat sit velit minim officia">&ndash;&gt;-->
+                <!--&lt;!&ndash;</Label>&ndash;&gt;-->
+                <!--&lt;!&ndash;</HBox>&ndash;&gt;-->
+
+
+                <!--&lt;!&ndash;<Label text="demmande contraintes: "/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<Label text="Lorem ipsum Nisi adipisicing incididunt ut cillum sed amet laborum occaecat pariatur labore magna irure pariatur."/>&ndash;&gt;-->
+                <!--&lt;!&ndash;</VBox>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<Button text="valider la commande" styleClass="valider"/>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;</VBox>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<VBox styleClass="inEnCours">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<Button text="" styleClass="close_enCours_"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<VBox   prefHeight="450">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<HBox>&ndash;&gt;-->
+                <!--&lt;!&ndash;<Label styleClass="platInfoLabel"&ndash;&gt;-->
+                <!--&lt;!&ndash;text="Mollit dolore irure elit aliqua Duis do sit amet do irure ut aliqua quis dolore.">&ndash;&gt;-->
+                <!--&lt;!&ndash;</Label>&ndash;&gt;-->
+                <!--&lt;!&ndash;</HBox>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<Label text="demmande contraintes: "/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<Label wrapText="true" text="Lorem ipsum Anim culpa ea sint irure sed occaecat irure ut id mollit aliqua."/>&ndash;&gt;-->
+                <!--&lt;!&ndash;</VBox>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<Button text="valider la commande" styleClass="valider"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;</VBox>&ndash;&gt;-->
+
+            <!--</FlowPane>-->
+        <!--</StackPane>-->
+    <!--</center>-->
+
+    <!--<left>-->
+        <!--<VBox style="-fx-background-color: #CCCCCC;">-->
+            <!--<ScrollPane style="-fx-hgap: 20;-->
+            <!-- -fx-vgap: 20;-->
+            <!--/*-fx-fit-to-height: true;*/-->
+            <!-- -fx-fit-to-width: true;-->
+            <!-- -fx-hbar-policy: never;"-->
+                        <!--styleClass="edge-to-edge">-->
+
+                <!--<StackPane fx:id="queueStack">-->
+                    <!--<VBox fx:id="queue" BorderPane.alignment="CENTER"/>-->
+                <!--</StackPane>-->
+
+            <!--</ScrollPane>-->
+        <!--</VBox>-->
+    <!--</left>-->
+    <!--<right>-->
+        <!--&lt;!&ndash;<ScrollBar orientation="vertical" prefWidth="20"/>&ndash;&gt;-->
+    <!--</right>-->
+
+    <!--<top>-->
+        <!--<BorderPane id="topPane">-->
+            <!--<left>-->
+                <!--<HBox styleClass="profile-info" fx:id="compteInfo">-->
+                    <!--&lt;!&ndash;<ImageView styleClass="img-profile">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Image url="/img/employe.png"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ImageView>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<VBox alignment="CENTER_LEFT">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Label text="ID: #435e3f35" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Label text="Jony Doe" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Label text="Magasinier" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Separator style="-fx-padding: 15 0 5 5;"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Button text="Sign out" styleClass="sign-out"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</VBox>&ndash;&gt;-->
+                <!--</HBox>-->
+            <!--</left>-->
+            <!--<center></center>-->
+            <!--<right><HBox alignment="BOTTOM_RIGHT" spacing="50">-->
+                <!--<Button fx:id="proposer" text="proposer des plats" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14"/>-->
+                <!--<Button fx:id="signaler" text="report un problem" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14"/>-->
+
+            <!--</HBox></right>-->
+        <!--</BorderPane>-->
+    <!--</top>-->
+<!--</BorderPane>-->
+<!--</StackPane>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<StackPane xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="koala.gui.cuisinier.controller.Controller"-->
+        <!--stylesheets="/css/magasinier.css" fx:id="rootContainer">-->
+        <!--<BorderPane fx:id="container" >-->
+        <!--</BorderPane>-->
+        <!--</StackPane>-->

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<TableView xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:id="tableView">
+    <columns>
+        <TableColumn text="Magasin">
+            <!--<cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>-->
+            <cellValueFactory><PropertyValueFactory property="magasin" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Id">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="id" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Nom">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="name" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Quantité">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="quantitie" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Prix achat">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="prixAchat" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Date péremption">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="datePeremption" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Description">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="description" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Calories">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="calorie" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Protéines">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="proteine" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Glucides">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="glucide" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Lipides">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="lipide" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Gluten">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="gluten" />
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</TableView>
+

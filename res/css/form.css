@@ -1,0 +1,212 @@
+.label {
+    -fx-text-fill: #4D4D4D;
+    -fx-font-size: 22;
+    -fx-background-color: transparent;
+    -fx-background-size: 150 100%;
+}
+.text-field {
+    -fx-background-color: #FFA000;
+    -fx-text-fill: white;
+    -fx-border-width: 1;
+    -fx-font-size: 16;
+    -fx-border-color: white;
+    -fx-alignment: center;
+    -fx-pref-height: 30;
+    -fx-accent: #4D4D4D;
+    -fx-prompt-text-fill: floralwhite;
+}
+
+.check-box {
+    /*-fx-background-color: #FFA000;*/
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-alignment: center;
+    -fx-pref-height: 35;
+    -fx-accent: #FFA000;
+    -fx-prompt-text-fill: floralwhite;
+    -fx-background-color: #FFA000;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-padding: 5 ;
+
+
+}
+
+.check-box *.box {
+    -fx-pref-width: 25;
+    -fx-pref-height: 25;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 2, 2, 1, 1;
+    -fx-padding: 0.25em; /* 3 -- padding from the outside edge to the mark */
+    -fx-border-color: white;
+
+    -fx-border-width: 1;
+}
+.check-box .mark {
+    -fx-background-color: transparent;
+    -fx-padding: 0.2; /* 4 -- this is half the size of the mark */
+
+}
+.check-box:selected .mark {
+    -fx-background-image: url("/img/g_selected.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-padding: 0.2; /* 4 -- this is half the size of the mark */
+    -fx-shape: none;
+}
+
+.import-plat-image {
+    -fx-image: url("/img/5-cuisinier/proposer0.png");
+}
+.import-plat-image:hover {
+    -fx-image: url("/img/5-cuisinier/proposer0-orng.png");
+}
+
+
+.inEnCoursProposeForm, .inEnCoursSignalerForm {
+
+    -fx-background-image: url("/img/5-cuisinier/proposer0.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+
+    -fx-pref-width: 500;
+    -fx-min-width: 500;
+    -fx-max-width: 500;
+    -fx-alignment: top-right;
+    -fx-padding: 0 10;
+    -fx-pref-height: 487;
+    -fx-border-width: .5 0 0 15;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(255,255,255,.5);
+    -fx-background-color: #EEEEEE;
+}
+.inEnCoursSignalerForm {
+
+    -fx-background-image: url("/img/5-cuisinier/problem.jpg");
+}
+.signalerCheckBox {
+    -fx-background-image: url("/img/signalerCheckBox.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-pref-width: 25;
+    -fx-pref-width: 25;
+}
+.close_enCours_ {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-image: url("/img/_close_1.png");
+    -fx-background-position: center ;
+    -fx-background-repeat: no-repeat;
+    -fx-min-width: 32 ;
+    -fx-min-height: 32 ;
+    -fx-text-alignment: center;
+}
+
+#recherche-btn {
+    -fx-background-color: rgba(255,145,0,.7);
+
+    -fx-font-size: 21;
+    -fx-padding: 0;
+    -fx-font-weight: bolder;
+    -fx-border-color: white;
+    -fx-border-width: 0;
+    -fx-text-fill: white;
+    -fx-pref-height: 54.897;
+    -fx-min-height: 54.897;
+    -fx-pref-width: 200 ;
+
+
+
+
+}
+#recherche-btn:focused {
+    -fx-background-color: #FFA000;
+    -fx-text-fill: white;
+    -fx-border-width: 1;
+
+
+
+}
+
+
+
+.envoyer {
+    -fx-padding: 10 40; -fx-background-color:  rgba(255,145,0,.8); -fx-border-width: 1; -fx-border-color: transparent; -fx-text-fill: white; -fx-font-size: 21;
+    -fx-translate-x: -20;
+
+}
+.envoyer:hover {
+    -fx-background-color: #FFA000; -fx-border-color: white;
+
+}
+.text-field-propo {
+    -fx-pref-height: 53; -fx-pref-width: 268.388;
+    -fx-background-color: rgba(77,77,77,.3);
+    -fx-accent: white;
+
+    -fx-text-alignment: left;
+    -fx-alignment: center-left;
+}
+.text-area {
+    text-area-background: transparent ;
+    -fx-text-fill: white;
+    -fx-border-width: 1;
+    -fx-font-size: 16;
+    -fx-border-color: white;
+    -fx-accent: white;
+    -fx-prompt-text-fill: floralwhite;
+}
+
+/*.text-area .content {*/
+    /*-fx-text-fill: white;*/
+/*}*/
+.text-area {
+    -fx-background-color: rgba(77,77,77,.3);
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+.label {
+    -fx-text-fill: white;
+}
+
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.thumb, .corner {
+    -fx-background-color: rgba(255,145,0,.5);
+    -fx-max-width: 7;
+    -fx-pref-width: 7;
+    -fx-min-width: 7;
+
+
+}
+.scroll-bar {
+    -fx-max-width: 7;
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-translate-x: 0;
+}
+.increment-button {
+    -fx-background-color: transparent;;
+}
+.increment-button:hover {
+    -fx-background-color: transparent;;
+}

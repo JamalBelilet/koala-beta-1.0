@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="koala.gui.admin.controller.Controller"
+           stylesheets="/css/admin.css" fx:id="rootContainer">
+    <BorderPane fx:id="container" >
+        <center>
+            <StackPane fx:id="centerStack">
+
+                <ScrollPane fx:id="centerScrollPane" styleClass="scroll-pane, edge-to-edge">
+                    <StackPane >
+                        <VBox>
+                            <FlowPane  fx:id="centerPane" BorderPane.alignment="CENTER" hgap="25" vgap="25">
+                            </FlowPane>
+                        </VBox>
+
+                    </StackPane>
+                </ScrollPane>
+
+
+
+
+
+                <!--<HBox styleClass="btn-notification-container" >-->
+                <!--</HBox>-->
+                <!--<Button fx:id="btnNotification" text="" styleClass="btn-notification"></Button>-->
+                <!--<VBox fx:id="notificationCollection" BorderPane.alignment="CENTER"/>-->
+                <!--<VBox styleClass="suggestions">-->
+
+                    <!--&lt;!&ndash;<HBox alignment="BASELINE_RIGHT">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Button fx:id="btnViewAll" text="view all"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</HBox>&ndash;&gt;-->
+                <!--</VBox>-->
+
+            </StackPane>
+        </center>
+
+        <left>
+            <TreeView fx:id="treeView" showRoot="false">
+                <TreeItem>
+                    <children>
+                        <TreeItem value="Accueil"/>
+                        <TreeItem value="Employés">
+                            <children>
+                                <TreeItem value="Comptes"/>
+                            </children>
+                        </TreeItem>
+                        <TreeItem value="Stock"/>
+                        <TreeItem value="Plats">
+                            <children>
+                                <TreeItem value="Catégories"/>
+                                <TreeItem value="Plats Proposés"/>
+                                <!--<TreeItem value="Tags"/>-->
+                            </children>
+                        </TreeItem>
+                        <TreeItem value="Données"/>
+                    </children>
+                </TreeItem>
+            </TreeView>
+        </left>
+        <right>
+
+
+        </right>
+
+        <top>
+
+            <BorderPane id="topPane">
+                <left>
+                    <HBox styleClass="profile-info" fx:id="compteInfo">
+                    </HBox>
+                </left>
+                <center>
+                    <ImageView fitHeight="115" preserveRatio="true">
+                        <Image url="/img/2-Admin/admin-name.png"/>
+                    </ImageView>
+                </center>
+                <right><HBox alignment="BOTTOM_RIGHT" spacing="10">
+                </HBox></right>
+            </BorderPane>
+
+        </top>
+    </BorderPane>
+</StackPane>
+

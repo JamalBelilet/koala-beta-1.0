@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.CheckBox?>
+
+<Group xmlns="http://javafx.com/javafx/8.0.91"
+       xmlns:fx="http://javafx.com/fxml/1"
+       fx:controller="koala.gui.cuisinier.controller.FormUIGenerator">
+
+    <VBox styleClass="inEnCoursSignalerForm" stylesheets="/css/form.css">
+        <Button text="" styleClass="close_enCours_"/>
+        <VBox prefHeight="450" style="-fx-padding: 30 8 0 8">
+            <Label text="Signaler un problème : "  style="-fx-font-size: 22; -fx-text-alignment: center; -fx-padding: 0 0 0 8"/>
+            <Separator style="-fx-pref-width: 250; -fx-orientation: horizontal; -fx-padding: 5 0 25 0"/>
+            <HBox alignment="BASELINE_LEFT">
+                <Label text="Description : "  style="-fx-font-size: 21; -fx-padding: 0 15 15 0"/>
+            </HBox>
+            <TextArea fx:id="contentTextArea"/>
+        </VBox>
+
+        <Button text="Envoyer"
+                styleClass="envoyer" fx:id="envoye_signaler_Btn" />
+
+    </VBox>
+</Group>

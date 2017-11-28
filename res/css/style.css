@@ -1,0 +1,108 @@
+
+/*__________________________________ top section _____________________________________*/
+
+#topPane {
+    -fx-background-color: linear-gradient(to bottom left, rgba(255,255,255,.3), rgba(0,0,0,.3));
+    -fx-padding: 10;
+    -fx-pref-height: 115;
+    -fx-max-height: 115;
+    -fx-pref-width: 1280;
+
+    -fx-border-width: 0 0 7 0;
+    -fx-border-color: rgba(255,255,255,.5);
+}
+
+.profile-info {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+.profile-info VBox {
+    -fx-spacing: 3;
+    -fx-padding: 5 0;
+    -fx-font-size: 14;
+}
+.profile-info VBox .label {
+    -fx-text-fill: white;
+}
+.separator .line {
+    -fx-border-color: white; -fx-border-width: .8;
+}
+.sign-out {
+    -fx-background-color: transparent;
+    -fx-border-width: .8;
+    -fx-border-color: white;
+    -fx-border-style: solid;
+    -fx-text-fill: white;
+
+
+}
+.sign-out:hover {
+    -fx-text-fill: white;
+    -fx-underline: true;
+    -fx-border-color: transparent;
+    -fx-background-color: #FFA000;
+
+
+}
+/*________________________________ center section _______________________________________*/
+#centerStack {
+    -fx-alignment: top-right;
+    -fx-fit-to-width: true;
+    -fx-background-color: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,.05));
+}
+
+/* ... */
+
+
+/*________________________________ center section :: action-bar ___________________________*/
+#centerStack .categorie-vction-bar .select {
+
+    -fx-font-size: 16;
+    -fx-font-weight: 500px;
+    -fx-background-color: transparent;
+    -fx-translate-x: -105;
+    -fx-text-fill: #E6E6E6;
+    -fx-underline: true;
+}
+
+#centerStack .categorie-vction-bar .select.inStatus {
+    -fx-translate-x: 0;
+}
+
+#centerStack .categorie-vction-bar .select *.box {
+    -fx-pref-width: 35;
+    -fx-pref-height: 35;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 2, 2, 1, 1;
+    -fx-padding: 0.25em;
+    -fx-text-fill: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-underline: true;
+
+}
+
+#centerStack .categorie-vction-bar .select:selected .mark {
+    -fx-background-image: url("/img/selected.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-padding: 0.333333em;
+    -fx-shape: none;
+}
+
+#centerStack .categorie-vction-bar .select:hover  *.box{
+
+    -fx-text-fill: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-underline: true;
+
+}
+
+#centerStack .categorie-vction-bar .select.select-all {
+    -fx-padding: 5;
+    -fx-translate-x: 0;
+    -fx-min-width: 170;
+}

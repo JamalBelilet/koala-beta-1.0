@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="koala.gui.caissier.controller.Controller"
+stylesheets="/css/caissier.css" fx:id="rootContainer">
+    <BorderPane fx:id="container" >
+        <center>
+
+            <StackPane>
+                <ScrollPane hbarPolicy="NEVER"  fitToWidth="true" id="centerContainer-for-image" styleClass="edge-to-edge">
+
+                    <VBox fx:id="centerContainer">
+
+                        <HBox spacing="25" fx:id="searchBar">
+
+                            <ImageView fx:id="rollback" fitHeight="50" fitWidth="26">
+                                <Image url="/img/row.png"/>
+                            </ImageView>
+
+                            <VBox fx:id="ceo">
+
+                                <StackPane>
+                                    <ImageView fitHeight="50 " fitWidth="391" fx:id="lines">
+                                        <Image url="/img/lines.png"/>
+                                    </ImageView>
+                                    <!--<TextField fx:id="searchField" prefColumnCount="25" translateX="25" translateY="7" style="-fx-background-color: rgba(0, 0, 0, 0); -fx-font-size: 18px;"/>-->
+                                    <ComboBox editable="true" fx:id="comboBox" translateX="25" translateY="7" style="-fx-background-color: rgba(0, 0, 0, 0); -fx-font-size: 18px; "/>
+
+                                </StackPane>
+
+                                <HBox styleClass="recherchAvanceeContainer" alignment="CENTER_LEFT" style=" -fx-min-height: 32; -fx-padding: 0 0 0 325">
+                                    <Button fx:id="recherchAvancee" text="advanced"/>
+                                </HBox>
+
+                            </VBox>
+                            <ImageView fx:id="searchIco" fitHeight="50" fitWidth="38">
+                                <Image url="/img/recherche.png"/>
+                            </ImageView>
+                            <HBox fx:id="searchKey"></HBox>
+                        </HBox>
+
+                        <TilePane fx:id="categories" styleClass="categories" BorderPane.alignment="CENTER"/>
+
+
+                    </VBox>
+                </ScrollPane>
+
+
+            </StackPane>
+        </center>
+
+        <left>
+            <VBox styleClass="orderContainer" visible="false" managed="false">
+
+
+                <VBox fx:id="order" BorderPane.alignment="CENTER">
+                </VBox>
+
+                <VBox style="-fx-alignment: center">
+                    <Label text="" fx:id="commanderLog" style="-fx-text-fill: brown; -fx-wrap-text: true; -fx-font-size: 14; -fx-pref-height: 50"/>
+                    <Button fx:id="commander" text="Commander"></Button>
+                </VBox>
+            </VBox>
+        </left>
+        <right>
+            <VBox fx:id="notificationCollection"  BorderPane.alignment="BOTTOM_RIGHT" />
+
+            <!--<VBox style="-fx-background-color: transparent; -fx-background-image: null" styleClass="notificationCollectionVBoxParent" stylesheets="/css/magasinier.css">-->
+
+                <!--&lt;!&ndash;<HBox alignment="BASELINE_RIGHT">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Button fx:id="btnViewAll" text="view all"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;</HBox>&ndash;&gt;-->
+            <!--</VBox>-->
+        </right>
+
+        <top>
+
+            <BorderPane id="topPane">
+                <left>
+                    <HBox styleClass="profile-info" fx:id="compteInfo">
+                        <!--<ImageView styleClass="img-profile">-->
+                        <!--<Image url="/img/employe.png"/>-->
+                        <!--</ImageView>-->
+                        <!--<VBox alignment="CENTER_LEFT">-->
+                        <!--<Label text="ID: #435e3f35" />-->
+                        <!--<Label text="Jony Doe" />-->
+                        <!--<Label text="Magasinier" />-->
+                        <!--<Separator style="-fx-padding: 15 0 5 5;"/>-->
+                        <!--<Button text="Sign out" styleClass="sign-out"/>-->
+                        <!--</VBox>-->
+                    </HBox>
+                </left>
+                <center>
+                    <ImageView style="-fx-max-height: 135; " fitHeight="115" preserveRatio="true">
+                        <Image url="/img/3-Caissier/caissier-name.png"/>
+                    </ImageView>
+                </center>
+                <right>
+                    <HBox alignment="BOTTOM_RIGHT" spacing="15" style="-fx-padding: 0 25">
+
+                        <Button fx:id="client" text="" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14;"/>
+                        <!--<Separator orientation="VERTICAL"   maxHeight="50"/>-->
+
+                        <Button fx:id="proposer" text="" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14"/>
+                        <Button fx:id="signaler" text="" style="-fx-background-color: rgba(0,0,0,0); -fx-font-size: 14"/>
+
+                    </HBox>
+                </right>
+            </BorderPane>
+
+        </top>
+    </BorderPane>
+</StackPane>
+
+

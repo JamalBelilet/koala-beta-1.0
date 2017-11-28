@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<TableView xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:id="tableView">
+    <columns>
+        <TableColumn text="Id">
+            <!--<cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>-->
+            <cellValueFactory><PropertyValueFactory property="id" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Nom">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="nom" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Login">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="login" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Password">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="password" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Pin">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="pin" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Pin enable">
+            <cellFactory><TextFieldTableCell fx:factory="forTableColumn"/></cellFactory>
+            <cellValueFactory><PropertyValueFactory property="pinEnable" />
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</TableView>
+

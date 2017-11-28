@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox fx:id="loginSuperContainer" stylesheets="/css/login.css" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="koala.gui.login.controller.Controller">
+    <VBox fx:id="welcomeContainer"  styleClass="welcome-container" visible="false" managed="false">
+        <Label styleClass="welcome" text="" />
+
+        <StackPane>
+            <ImageView fx:id="grayCircle"><Image url="/img/grayCircle.png"/> </ImageView>
+            <ImageView fx:id="blackCircle"><Image url="/img/blackCircle.png" /> </ImageView>
+        </StackPane>
+    </VBox>
+    
+
+    <VBox spacing="20" fx:id="containerForLogin">
+        <VBox fx:id="loginContainer" styleClass="login-container">
+            <Label text="login:" fx:id="loginLabel" visible="false"/>
+
+            <HBox spacing="15" >
+                <ImageView>
+                    <Image url="/img/1-Login/2.png"/>
+                </ImageView>
+                <TextField styleClass="login-text-field"  fx:id="login" promptText="identifiant" style="-fx-min-width: 350"/>
+
+            </HBox>
+        </VBox>
+
+        <VBox fx:id="passwdContainer" styleClass="passwd-container">
+            <Label text="passwd:" fx:id="passwdLabel" visible="false"/>
+
+            <HBox spacing="15" >
+                <ImageView>
+                    <Image url="/img/1-Login/3.png"/>
+                </ImageView>
+                <PasswordField fx:id="passwd" promptText="mot de passe" style="-fx-min-width: 350" />
+
+            </HBox>
+        </VBox>
+
+        <HBox fx:id="loginOptions" styleClass="login-options">
+            <Button styleClass="pin" text="" fx:id="pinOption"/>
+            <Button styleClass="passwd" text="" fx:id="passwdOption" />
+        </HBox>
+
+        <HBox fx:id="signInContainer" styleClass="sign-in-container">
+            <Button fx:id="signIn" styleClass="sign-in" text="sign in" />
+        </HBox>
+    </VBox>
+
+
+
+
+
+
+</VBox>

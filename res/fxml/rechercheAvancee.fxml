@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<Group >
+    <GridPane  stylesheets="/css/form.css"  hgap="15" vgap="15" style="-fx-padding: 30 100;"   prefHeight="450">
+
+        <Label text="Prix min : "           GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField text="0"                 GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="Prix max : "           GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+        <TextField  promptText="&#x221E;"   GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+        <Label text="Temps max : "          GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField promptText="&#x221E;"    GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+
+        <Label text="Calories min : "       GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField text="0"                 GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Label text="Calories max : "       GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+        <TextField promptText="&#x221E;"    GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+        <Label text="Protéines min : "      GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField  text="0"                GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        <Label text="Protéines max : "      GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+        <TextField  promptText="&#x221E;"   GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+        <Label text="Lipides min : "        GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <TextField  text="0"                GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        <Label text="Lipides max : "        GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+        <TextField  promptText="&#x221E;"   GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+
+        <Label text="Glucides min : "       GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <TextField  text="0"                GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+        <Label text="Glucides max : "       GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+        <TextField  promptText="&#x221E;"   GridPane.rowIndex="5" GridPane.columnIndex="3"/>
+
+
+        <CheckBox selected="true" text="oui" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+        <Label text="Gluten : "             GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+
+        <HBox  alignment="BASELINE_RIGHT" prefWidth="150" GridPane.rowIndex="7" GridPane.columnIndex="2" GridPane.columnSpan="2">
+            <Button text="Rechercher" id="recherche-btn"/>
+        </HBox>
+    </GridPane>
+
+</Group>

@@ -1,0 +1,18 @@
+.inEnCoursProposeForm {
+    -fx-pref-width: 700;
+    -fx-min-width: 700;
+    -fx-max-width: 700;
+    -fx-alignment: top-right;
+    -fx-padding: 10 10;
+    -fx-pref-height: 487;
+    -fx-background-color: #EEEEEE;
+}
+.close_enCours_ {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-image: url("/img/_close_1.png");
+    -fx-background-position: center ;
+    -fx-background-repeat: no-repeat;
+    -fx-min-width: 32 ;
+    -fx-min-height: 32 ;
+    -fx-text-alignment: center;
+}

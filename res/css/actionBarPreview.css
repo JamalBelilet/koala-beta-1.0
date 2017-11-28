@@ -1,0 +1,22 @@
+.preview-action-bar {
+    -fx-background-color: transparent;
+    -fx-spacing: 3;
+}
+.preview-action-bar Button {
+    -fx-font-size: 14;
+    -fx-text-fill: #EEEEEE;
+    -fx-background-color: #808080;
+    -fx-pref-width: 50;
+    -fx-pref-height: 35;
+
+}
+.preview-action-bar Button:hover {
+    -fx-background-color: #666666;
+    -fx-pref-width: 50;
+    -fx-pref-height: 35;
+}
+.preview-action-bar Button:focused {
+    -fx-background-color: #4D4D4D;
+    -fx-pref-width: 50;
+    -fx-pref-height: 35;
+}
